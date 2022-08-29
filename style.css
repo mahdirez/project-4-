@@ -68,7 +68,7 @@ nav i{
 @media (max-width:768px){
     nav{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
     }
     nav img{
@@ -219,6 +219,13 @@ header .btn-header:hover{
     .p-header{
         font-size: 20px;
     }
+    .img-header{
+           width: 95%;
+           /* height: 80vh; */
+           background-image: url("./img/h1.png"); 
+           background-repeat: no-repeat;
+           background-position: center;
+}
 }
 
 @media (max-width:380px){
@@ -311,6 +318,17 @@ section article p{
 
 
 @media (max-width:768px){
+    main .header-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 32px 0;
+    }
+    main .header-main img{
+        margin: 5px 0;
+        width: 40%;
+        cursor: pointer;
+    }
     .section-mains{
         margin-bottom: 1rem;
     }
@@ -466,6 +484,8 @@ section article p{
     }
 }
 
+
+
 /*section-mains2*/
 
 .section-mains2{
@@ -528,11 +548,11 @@ section article p{
   background-color: #fff;
   margin: 0 20px;
   padding:40px 20px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 
 .content-box-mains2 .h2-box-mains2{
@@ -553,10 +573,26 @@ section article p{
 }
 
 @media (max-width:768px){
+    .content-box .ct-content-box h2 {
+        color: rgb(64, 64, 64);
+        margin-bottom:1.5rem;
+        font-size: 19px;
+    }
+    .content-box .ct-content-box p {
+        color: #3f3f3f;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: justify;
+    }
+    .section-mains2{
+        padding: 24px;
+    }
     .box-mains{
         display: flex;
         flex-direction: column;
         margin-top: 0;
+        width: 100%;
+        text-align: center;
     }
     .boxes-mains{
         display: flex; 
@@ -564,6 +600,29 @@ section article p{
         justify-content: center;
         align-items: center;
         margin-top: 16px;
+        width: 100%;
+        margin: 20px 0;
+        padding: 24px 5px;
+    }
+    .img-boxmains2{
+        width: 100%;
+    }
+
+    .content-box-mains2{
+        width: 100%;
+    }
+    .v-mains2{
+        width: 100%;
+    }
+    .content-box-mains2 .h2-box-mains2{
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    .content-box-mains2 .p-box-mains2{
+        font-size: 14px;
+        line-height: 17px;
+        color: rgb(64, 64, 64);
+        margin: 0;
     }
 }
 
@@ -597,8 +656,18 @@ footer .icon-footer i{
 }
 
 @media (max-width:768px){
+    footer{
+        padding: 20px;
+    }
     footer .list-footer ul{
         font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    footer .list-footer ul li{
+        padding: 5px;
     }
     footer .icon-footer i{
         font-size: 15px;
