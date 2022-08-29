@@ -331,6 +331,10 @@ section article p{
     .section-mains{
         margin-bottom: 1rem;
     }
+
+    /* .article-class{
+        justify-content: space-between;
+    } */
     section article{
         width: 30%;
         padding: 0 auto;
