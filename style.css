@@ -100,31 +100,30 @@ nav i {
 }
 
 .li-mobile:first-child {
-    background-color: #5ff707;
-
+  background-color: #5ff707;
 }
-.li-mobile:nth-child(2){
-    background-color: orangered;
-}
-
-.li-mobile:nth-child(3){
-    background-color: blueviolet;
+.li-mobile:nth-child(2) {
+  background-color: orangered;
 }
 
-.li-mobile:nth-child(4){
-    background-color: lightpink;
+.li-mobile:nth-child(3) {
+  background-color: blueviolet;
 }
 
-.li-mobile:nth-child(5){
-    background-color: rgb(180, 180, 48);
+.li-mobile:nth-child(4) {
+  background-color: lightpink;
 }
 
-.li-mobile:nth-child(6){
-    background-color: darkslategrey;
+.li-mobile:nth-child(5) {
+  background-color: rgb(180, 180, 48);
 }
 
-.li-mobile:nth-child(7){
-    background-color: dimgray;
+.li-mobile:nth-child(6) {
+  background-color: darkslategrey;
+}
+
+.li-mobile:nth-child(7) {
+  background-color: dimgray;
 }
 
 /*slide in*/
@@ -164,18 +163,18 @@ nav i {
 }
 
 @keyframes slide-in {
-    from {
-      transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      -moz-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      -o-transform: translateX(-100%);
-}
-  
-    to {
-      transform: translateX(0);
-    }
+  from {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
   }
+
+  to {
+    transform: translateX(0);
+  }
+}
 
 /*slide out*/
 
@@ -214,14 +213,14 @@ nav i {
   -webkit-animation: slide-out 0.4s linear 0.2s both;
 }
 
-@keyframes slide-out{
+@keyframes slide-out {
   from {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-}
+  }
 
   to {
     transform: translateX(-100%);
@@ -229,7 +228,7 @@ nav i {
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
-}
+  }
 }
 
 /*nav responsive*/
@@ -265,9 +264,9 @@ nav i {
   }
 }
 
-@media (max-width:468px) {
-  .li-mobile:first-child{
-    margin-top: 50px
+@media (max-width: 468px) {
+  .li-mobile:first-child {
+    margin-top: 50px;
   }
 }
 /*header*/
@@ -712,6 +711,7 @@ section article p {
 }
 
 .btn-mains2 {
+  cursor: pointer;
   display: block;
   margin: 50px auto;
   padding: 10px 30px;
@@ -776,7 +776,7 @@ section article p {
   width: 50%;
 }
 
-.p-box-mains2{
+.p-box-mains2 {
   text-align: justify;
   padding: 0 5px;
 }
@@ -993,5 +993,113 @@ footer .icon-footer i {
   }
   to {
     opacity: 1;
+  }
+}
+
+.bg-gray {
+  width: 100vw;
+  height: 100vh;
+  background-color: #71717188;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: none;
+}
+/*modal*/
+
+.header-modal {
+  height: 10%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(89, 89, 250);
+  color: #fff;
+}
+.modal {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 60%;
+  display: none;
+  z-index: 580;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-modal > label {
+  margin-top: 20px;
+}
+
+.form-modal input {
+  width: 400px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.form-modal input::placeholder {
+  font-size: 15px;
+  color: rgb(196, 194, 194);
+}
+
+.btn-modal {
+  background-color: inherit;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-modal > i {
+  font-size: 20px;
+}
+
+.btn-submit {
+  background-color: rgb(89, 89, 250);
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.btn-submit:hover {
+  background-color: rgba(89, 89, 250, 0.582);
+}
+
+@media (max-width: 992px) {
+  .form-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-modal input{
+    width: 120%;
+    height: 15px;
+    margin:  5px 0;
+  }
+  .btn-submit{
+    padding: 5px 10px;
   }
 }

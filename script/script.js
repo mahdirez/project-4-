@@ -62,3 +62,51 @@ function slidenav(dir1,dir2){
         item.classList.replace(`slide-${dir1}-${idx+1}`,`slide-${dir2}-${idx+1}`);
       })
 }
+
+
+
+/*modal*/
+
+const btnLog = document.querySelector('.btn-mains2');
+const modal = document.querySelector('.modal');
+const btnModal= document.querySelector('.btn-modal');
+const bgGray = document.querySelector('.bg-gray');
+btnLog.addEventListener('click',()=>{
+    modal.style.display = 'block';
+    bgGray.style.display = 'block';
+})
+
+btnModal.addEventListener('click',()=>{
+  modal.style.display = 'none';
+  bgGray.style.display = 'none';
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
