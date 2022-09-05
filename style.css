@@ -1021,33 +1021,29 @@ footer .icon-footer i {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   position: fixed;
-  top: 25%;
+  top: 10%;
   left: 0;
-  right: 25%;
+  right: 10%;
   bottom: 0;
-  width: 50%;
-  height: 60%;
+  width: 80%;
+  height: 85%;
   display: none;
-  z-index: 580;
+  z-index: 999;
 }
 
 .form-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 .form-modal > label {
-  margin-top: 20px;
+  margin: 2% 0;
 }
 
 .form-modal input {
   width: 400px;
-  height: 30px;
+  height: 20px;
   border: none;
   outline: none;
   border-bottom: 2px solid rgb(0, 0, 0);
@@ -1086,26 +1082,31 @@ footer .icon-footer i {
   background-color: rgba(89, 89, 250, 0.582);
 }
 
+.spModal{
+  font-size: 15px;
+  color: rgb(255, 2, 2);
+}
+.spModalT{
+  font-size: 15px;
+  color: rgb(18, 206, 18);
+  margin-top: 20px;
+}
+
 @media (max-width: 992px) {
   .modal{
-    width: 80%;
-    height: 80%;
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    bottom: 10%;
-    right: 10%;
-  }
-  .form-modal > label{
-    margin-top: 40px;
+    overflow: hidden;
   }
   .form-modal input{
     width: 100%;
     height: 20px;
-    margin:  10px 0;
   }
+  .form-modal > label {
+    margin: 3% 0;
+  }
+}
 
-  .btn-submit{
-    padding: 5px 10px;
+@media (max-width:320px){
+  .form-modal > label{
+    margin: 8% 0;
   }
 }
