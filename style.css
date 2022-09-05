@@ -1082,21 +1082,21 @@ footer .icon-footer i {
   background-color: rgba(89, 89, 250, 0.582);
 }
 
-.spModal{
+.spModal {
   font-size: 15px;
   color: rgb(255, 2, 2);
 }
-.spModalT{
+.spModalT {
   font-size: 15px;
   color: rgb(18, 206, 18);
   margin-top: 20px;
 }
 
 @media (max-width: 992px) {
-  .modal{
+  .modal {
     overflow: hidden;
   }
-  .form-modal input{
+  .form-modal input {
     width: 100%;
     height: 20px;
   }
@@ -1105,8 +1105,8 @@ footer .icon-footer i {
   }
 }
 
-@media (max-width:320px){
-  .form-modal > label{
-    margin: 8% 0;
+@media (max-width:475px) {
+  .form-modal > label {
+    margin: 10% 0;
   }
 }
